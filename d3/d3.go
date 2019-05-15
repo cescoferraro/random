@@ -150,7 +150,7 @@ func CrawlURLSingle(urlToCrawl string) (Whole, error) {
 	}()
 	wg.Wait()
 	if anyerror != nil {
-		return whole, err
+		return whole, anyerror
 	}
 	return whole, nil
 }
